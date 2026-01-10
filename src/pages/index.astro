@@ -1,0 +1,36 @@
+---
+import "../styles/global.css";
+console.log("Hello Astro!")
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My API Project</title>
+</head>
+<body class="bg-gray-800">
+  <header class="bg-blue-300">
+    <nav class="flex justify-between items-center p-6">
+      <a class="text-2xl text-black font-bold" href="#">Data API Project</a>
+      <ul class="flex gap-8 text-black">
+        <li class="hover:bg-blue-200 p-1 rounded-md"><a href="#">Home</a></li>
+        <li class="hover:bg-blue-200 p-1 rounded-md"><a href="#">About</a></li>
+        <li class="hover:bg-blue-200 p-1 rounded-md"><a href="#">Skills</a></li>
+        <li class="hover:bg-blue-200 p-1 rounded-md"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="p-45">
+      <h3 class="text-cyan-400 pb-2">1. Create a person + their birthday + how many days before to remind</h3>
+      <h4 class="text-cyan-400 pb-2">2. Every day, a job runs:</h4>
+      <ul class="text-amber-200 list-inside list-disc">
+        <li>finds birthdays coming up</li>
+        <li>if reminder date is today, sends the reminder</li>
+        <li>marks it as sent so it doesn’t spam</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
